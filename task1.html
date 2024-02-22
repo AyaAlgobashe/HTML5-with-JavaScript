@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> lab1 </title>
+    <style>
+
+        
+        .butt-div{
+            display: inline-block;
+
+
+        }
+        button{
+            padding: 20px;
+            width: 100px;
+            height: 50pxs;
+            margin: 50px ;
+            background-color: aqua;
+        }
+        
+        .box-trans{
+            width:100px;
+            height:100px;
+            border:1px solid black;
+            position:absolute;
+            animation:boxanimation;
+            animation-duration:5s;
+            animation-iteration-count:infinite;
+            transition:all 2s;
+        }
+        .stopBox{
+            
+            animation-play-state: paused;
+
+
+        }
+        .box-trans:hover{
+            animation-play-state:paused;
+            transform:scale(1.5);
+        }
+        @keyframes boxanimation{
+           
+        
+            0%{
+            left: 50px;
+            top: 150px;
+            background-color:lightyellow;
+            }
+            30% {
+                top: 150px;
+                left: 500px;
+                background-color: lightblue;
+            }
+            60% {
+                left: 500px;
+                top: 500px;
+                background-color: lightgreen;
+            }
+            90% {
+                left: 150px;
+                top: 500px;
+                background-color: lightgray;
+            }
+
+            }
+            
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="butt-div">
+        <button class="stopButt">Start</button>
+        <button class="endButt">stop</button>
+    </div>
+   
+        <p class="fixBox" ></p>
+        
+    
+
+</body>
+<script src="task1.js"></script>
+
+</html>
